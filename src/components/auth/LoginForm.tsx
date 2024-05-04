@@ -52,7 +52,6 @@ export default function LoginForm() {
           form.reset();
         } else if (response?.error) {
           setError(response?.error);
-          form.reset();
         }
 
         if (response?.twoFactor) {
